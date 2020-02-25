@@ -9,7 +9,7 @@
 
 
 ### Installation 💻
-- git clone https://github.com/chlasswg26/grabutxxi.git
+- git clone https://github.com/chlasswg26/grabutcast.git
 - open terminal based on project path (buka terminal di folder project yang sudah di clone)
 - run this code **`composer require chlasswg26/chlassgrabber`**
 - done
