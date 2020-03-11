@@ -5,7 +5,7 @@ use simple_curl\curl;
 
 $page = $_GET['page'];
 
-    if (!empty($page) && isset($page) && is_numeric($page))
+    if ((!empty($page) || isset($page)) && is_numeric($page))
     {
         $snipe = URL . 'project-list/page/' . $page . '/';
     } else {
@@ -70,4 +70,4 @@ $page = $_GET['page'];
         ];
     }
 
-    echo json_encode((object)$array, JSON_PRETTY_PRINT);
+    echo json_encode($array, JSON_PRETTY_PRINT);

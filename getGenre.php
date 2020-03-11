@@ -25,4 +25,4 @@ use simple_curl\curl;
         ];
     }
 
-    echo json_encode((object)$array, JSON_PRETTY_PRINT);
+    echo json_encode($array, JSON_PRETTY_PRINT);

@@ -76,4 +76,4 @@ use simple_curl\curl;
         $array['genre'][] = $genre[1][$i];
     }
 
-    echo json_encode((object)$array, JSON_PRETTY_PRINT);
+    echo json_encode($array, JSON_PRETTY_PRINT);

@@ -5,7 +5,7 @@ use simple_curl\curl;
 
 $query = base64_decode($_GET['query']);
 
-if (empty($query) && !isset($query))
+if (empty($query) || !isset($query))
 {
     die();
 } else {
@@ -72,5 +72,5 @@ if (empty($query) && !isset($query))
         ];
     }
 
-    echo json_encode((object)$array, JSON_PRETTY_PRINT);
+    echo json_encode($array, JSON_PRETTY_PRINT);
 }

@@ -10,7 +10,7 @@ if (empty($query) || !isset($query))
 {
     die();
 } else {
-    if (!empty($page) && isset($page) && is_numeric($page))
+    if ((!empty($page) || isset($page)) && is_numeric($page))
     {
         $snipe = URL . 'genres/' . $query . '/page/' . $page . '/';
     } else {
@@ -75,5 +75,5 @@ if (empty($query) || !isset($query))
         ];
     }
 
-    echo json_encode((object)$array, JSON_PRETTY_PRINT);
+    echo json_encode($array, JSON_PRETTY_PRINT);
 }
